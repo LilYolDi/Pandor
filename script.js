@@ -1,8 +1,8 @@
 const products = [
     { name: "Игровая мышка", price: "699 грн", image: "images/1.jpg" },
-    { name: "Клавиатура RGB", price: "1299 грн", image: "images/keyboard.jpg" },
-    { name: "Наушники", price: "999 грн", image: "images/headphones.jpg" },
-    { name: "Монитор 24", price: "4999 грн", image: "images/monitor.jpg" },
+    { name: "Клавиатура RGB", price: "1299 грн", image: "images/2.jpg" },
+    { name: "Наушники", price: "999 грн", image: "images/3.jpg" },
+    { name: "Монитор 24", price: "4999 грн", image: "images/4.jpg" },
     { name: "SSD 1 ТБ", price: "2499 грн", image: "images/ssd.jpg" },
     { name: "Игровое кресло", price: "5999 грн", image: "images/chair.jpg" },
     { name: "Веб-камера Full HD", price: "899 грн", image: "images/camera.jpg" },
