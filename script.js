@@ -91,3 +91,11 @@ function openForm(){
 function closeForm(){
     document.getElementById("popup").style.display = "none";
 }
+
+function openTelegram(){
+window.open(
+"https://t.me/Kukuruzaa7?text=" +
+encodeURIComponent("Хочу разместить объявление"),
+"_blank"
+);
+}
