@@ -146,10 +146,22 @@ box-shadow:0 0 35px #ff0033;
 
 }
 
+.menu-btn{
+    background:#00ff66;
+    border:none;
+    padding:20px 15px;
+    cursor:pointer;
+    font-size:18px;
+
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:10000;
+}
+
 .menu-btn:hover{
 background:#4DFFB8;
 box-shadow:0 0 35px #ff0033;
-left: -750:
+}
+
 @media (max-width:768px) {
-	
-	@media (max-width:768px) {@media (max-width:768px) {
