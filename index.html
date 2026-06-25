@@ -4,13 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>GREEN SHOP</title>
+<title>PANDOR SHOP</title>
 
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- 🔥 МЕНЮ -->
 <div id="menu" class="menu">
 
     <span class="close" onclick="closeMenu()">✖️</span>
@@ -24,46 +25,24 @@
 
 </div>
 
+<!-- 🔥 ШАПКА -->
 <header>
 🛒 PANDOR SHOP
 <button class="menu-btn" onclick="openMenu()">☰ Меню</button>
 </header>
 
+<!-- 🔥 ПОИСК -->
 <div class="search">
 <input id="search" placeholder="Поиск товара">
 </div>
 
+<!-- 🔥 ТОВАРЫ -->
 <div class="products" id="products"></div>
 
-<!-- 🔥 КНОПКА -->
-<button class="add-btn" onclick="openForm()">
+<!-- 🔥 КНОПКА (TELEGRAM) -->
+<button class="add-btn" onclick="openTelegram()">
 Подать объявление
 </button>
-
-<!-- 🔥 ВСПЛЫВАЮЩАЯ ФОРМА -->
-<div id="popup" class="popup">
-
-  <div class="popup-content">
-
-    <span class="close" onclick="closeForm()">✖️</span>
-
-    <h2>Добавить товар</h2>
-
-    <form action="https://formspree.io/f/mbdvgqqn" method="POST" enctype="multipart/form-data">
-
-      <input type="text" name="title" placeholder="Название товара" required>
-
-      <textarea name="description" placeholder="Описание товара" required></textarea>
-
-      <input type="file" name="photo" accept="image/*" required>
-
-      <button type="submit">Отправить</button>
-
-    </form>
-
-  </div>
-
-</div>
 
 <script src="script.js"></script>
 
