@@ -29,90 +29,65 @@ const products = [
 
 let box = document.getElementById("products");
 
+// 👉 ПОКАЗ ТОВАРОВ
 function showProducts(list){
+    box.innerHTML = "";
 
-box.innerHTML="";
+    list.forEach((product, index) => {
+        box.innerHTML += `
+        <div class="card">
+            <img src="${product.image}">
+            <div class="info">
+                <div class="title">${product.name}</div>
+                <div class="price">${product.price}</div>
 
-list.forEach((product,index)=>{
-
-box.innerHTML+=`
-
-<div class="card">
-
-<img src="${product.image}">
-
-<div class="info">
-
-<div class="title">
-${product.name}
-</div>
-
-<div class="price">
-${product.price}
-</div>
-
-<button class="buy" onclick="buy(${index})">
-Купить
-</button>
-
-</div>
-
-</div>
-
-`;
-
-});
-
+                <button class="buy" onclick="buy(${index})">
+                    Купить
+                </button>
+            </div>
+        </div>
+        `;
+    });
 }
 
+// 👉 КНОПКА КУПИТЬ
 function buy(index){
+    let product = products[index].name;
 
-let product=products[index].name;
-
-window.open(
-
-"https://t.me/Kukuruzaa7?text="+
-encodeURIComponent("Хочу заказать: "+product),
-
-"_blank"
-
-);
-
+    window.open(
+        "https://t.me/Kukuruzaa7?text=" +
+        encodeURIComponent("Хочу заказать: " + product),
+        "_blank"
+    );
 }
+
+// 👉 ПОИСК
+document.getElementById("search").oninput = function(){
+    let text = this.value.toLowerCase();
+
+    let result = products.filter(product =>
+        product.name.toLowerCase().includes(text)
+    );
+
+    showProducts(result);
+};
 
 showProducts(products);
 
-document.getElementById("search").oninput=function(){
-
-let text=this.value.toLowerCase();
-
-let result=products.filter(product=>
-
-product.name.toLowerCase().includes(text)
-
-);
-
-showProducts(result);
-
-};
-
-function openTelegram(){
-
-window.open(
-"https://t.me/Kukuruzaa7?text=" +
-encodeURIComponent("Хочу подать объявление"),
-"_blank"
-);
-
-}
-
-
-
-
+// 👉 МЕНЮ
 function openMenu() {
     document.getElementById("menu").style.left = "0";
 }
 
 function closeMenu() {
     document.getElementById("menu").style.left = "-300px";
+}
+
+/* 👉 POPUP ФОРМА */
+function openForm(){
+    document.getElementById("popup").style.display = "flex";
+}
+
+function closeForm(){
+    document.getElementById("popup").style.display = "none";
 }
