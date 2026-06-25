@@ -3,28 +3,28 @@ const products = [
     { name: "Клавиатура RGB", price: "1299 грн", image: "images/2.jpg" },
     { name: "Наушники", price: "999 грн", image: "images/3.jpg" },
     { name: "Монитор 24", price: "4999 грн", image: "images/4.jpg" },
-    { name: "SSD 1 ТБ", price: "2499 грн", image: "images/5.jpg" },
-    { name: "Игровое кресло", price: "5999 грн", image: "images/6.jpg" },
-    { name: "Веб-камера Full HD", price: "899 грн", image: "images/7.jpg" },
-    { name: "Микрофон USB", price: "1499 грн", image: "images/8.jpg" },
-    { name: "Коврик RGB", price: "499 грн", image: "images/9.jpg" },
-    { name: "Power Bank", price: "1199 грн", image: "images/10.jpg" },
-    { name: "Смарт часы", price: "2499 грн", image: "images/11.jpg" },
-    { name: "Bluetooth колонка", price: "1799 грн", image: "images/12.jpg" },
-    { name: "Ноутбук Gaming", price: "32999 грн", image: "images/13.jpg" },
-    { name: "Видеокарта RTX", price: "24999 грн", image: "images/14.jpg" },
-    { name: "Процессор Ryzen 7", price: "11999 грн", image: "images/15.jpg" },
-    { name: "Оперативная память 16GB", price: "2299 грн", image: "images/16.jpg" },
-    { name: "Корпус ПК", price: "1999 грн", image: "images/17.jpg" },
-    { name: "Блок питания", price: "2699 грн", image: "images/18.jpg" },
-    { name: "Wi-Fi роутер", price: "1899 грн", image: "images/19.jpg" },
-    { name: "Флешка 128GB", price: "499 грн", image: "images/20.jpg" },
-    { name: "HDD 2TB", price: "2999 грн", image: "images/21.jpg" },
-    { name: "Геймпад", price: "1299 грн", image: "images/22.jpg" },
-    { name: "Планшет", price: "7999 грн", image: "images/23.jpg" },
-    { name: "Смартфон Pro", price: "15999 грн", image: "images/24.jpg" },
-    { name: "Зарядка Type-C", price: "299 грн", image: "images/25.jpg" },
-    { name: "LED RGB лампа", price: "399 грн", image: "images/26.jpg" }
+    { name: "SSD 1 ТБ", price: "2499 грн", image: "images/ssd.jpg" },
+    { name: "Игровое кресло", price: "5999 грн", image: "images/chair.jpg" },
+    { name: "Веб-камера Full HD", price: "899 грн", image: "images/camera.jpg" },
+    { name: "Микрофон USB", price: "1499 грн", image: "images/microphone.jpg" },
+    { name: "Коврик RGB", price: "499 грн", image: "images/mousepad.jpg" },
+    { name: "Power Bank", price: "1199 грн", image: "images/powerbank.jpg" },
+    { name: "Смарт часы", price: "2499 грн", image: "images/watch.jpg" },
+    { name: "Bluetooth колонка", price: "1799 грн", image: "images/speaker.jpg" },
+    { name: "Ноутбук Gaming", price: "32999 грн", image: "images/laptop.jpg" },
+    { name: "Видеокарта RTX", price: "24999 грн", image: "images/gpu.jpg" },
+    { name: "Процессор Ryzen 7", price: "11999 грн", image: "images/cpu.jpg" },
+    { name: "Оперативная память 16GB", price: "2299 грн", image: "images/ram.jpg" },
+    { name: "Корпус ПК", price: "1999 грн", image: "images/case.jpg" },
+    { name: "Блок питания", price: "2699 грн", image: "images/psu.jpg" },
+    { name: "Wi-Fi роутер", price: "1899 грн", image: "images/router.jpg" },
+    { name: "Флешка 128GB", price: "499 грн", image: "images/usb.jpg" },
+    { name: "HDD 2TB", price: "2999 грн", image: "images/hdd.jpg" },
+    { name: "Геймпад", price: "1299 грн", image: "images/gamepad.jpg" },
+    { name: "Планшет", price: "7999 грн", image: "images/tablet.jpg" },
+    { name: "Смартфон Pro", price: "15999 грн", image: "images/phone.jpg" },
+    { name: "Зарядка Type-C", price: "299 грн", image: "images/charger.jpg" },
+    { name: "LED RGB лампа", price: "399 грн", image: "images/led.jpg" }
 ];
 
 let box = document.getElementById("products");
@@ -106,6 +106,13 @@ encodeURIComponent("Хочу подать объявление"),
 
 }
 
-function openMenu(){
-alert("PANDOR SHOP — магазин техники и аксессуаров.");
+
+
+
+function openMenu() {
+    document.getElementById("menu").style.left = "0";
+}
+
+function closeMenu() {
+    document.getElementById("menu").style.left = "-300px";
 }
