@@ -209,8 +209,8 @@ font-size:20px;
 transition:0.3s;
 }
 
-.card:hover{
-transform:translateY(-5px);
+.card:active{
+transform:scale(1.05px);
 box-shadow:0 0 20px #00ff66;
 }
 
