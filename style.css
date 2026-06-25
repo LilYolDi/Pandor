@@ -98,21 +98,55 @@ background:#4DFFB8;
 box-shadow:0 0 35px #ff0033;
 }
 
+
+
+
+
+
+.menu{
+    position:fixed;
+    top:0;
+    left:-300px;
+    width:300px;
+    height:100%;
+    background:#111;
+    transition:0.3s;
+    z-index:9999;
+    padding-top:60px;
+}
+
+.menu a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+}
+
+.menu a:hover{
+    background:#00ff66;
+    color:black;
+}
+
+.close{
+    position:absolute;
+    top:15px;
+    right:20px;
+    font-size:30px;
+    cursor:pointer;
+    color:white;
+}
+
 .menu-btn{
-position:absolute;
-right:190px;
-top:14px;
-background:#00ff66;
-color:#000;
-border:none;
-border-radius:8px;
-padding:12px 18px;
-font-weight:bold;
-cursor:pointer;
-box-shadow:0 0 20px #00ff66;
+    background:#00ff66;
+    border:none;
+    padding:10px 15px;
+    cursor:pointer;
+    font-size:18px;
+	position: relative;
+	left: -750px;
 }
 
 .menu-btn:hover{
 background:#4DFFB8;
-box-shadow:0 0 35px #0033;
+box-shadow:0 0 35px #ff0033;
 }
