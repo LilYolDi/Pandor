@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About PANDOR SHOP</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#050505;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:90%;
+    max-width:700px;
+    background:#111;
+    border:2px solid #00ff66;
+    border-radius:20px;
+    padding:40px 30px;
+    text-align:center;
+    box-shadow:0 0 25px #00ff66;
+    animation:show .7s ease;
+}
+
+.icon{
+    font-size:65px;
+    margin-bottom:15px;
+}
+
+h1{
+    color:#00ff66;
+    font-size:36px;
+    margin-bottom:25px;
+    text-shadow:0 0 15px #00ff66;
+}
+
+p{
+    font-size:20px;
+    line-height:1.8;
+    color:#ddd;
+}
+
+.shop{
+    color:#00ff66;
+    font-weight:bold;
+}
+
+/* Кнопка */
+
+.shop-btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    background:#111;
+    color:#00ff66;
+    text-decoration:none;
+    border:2px solid #00ff66;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+    box-shadow:0 0 15px #00ff66;
+}
+
+.shop-btn:hover{
+    background:#00ff66;
+    color:#000;
+    transform:scale(1.05);
+    box-shadow:0 0 30px #00ff66;
+}
+
+.footer{
+    margin-top:35px;
+    color:#888;
+    font-size:15px;
+}
+
+@keyframes show{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="icon">🛒</div>
+
+<h1>PANDOR SHOP</h1>
+
+<p>
+<b>Новые и б/у товары в одном месте!</b>
+<br><br>
+
+Увидел товар — договорился с продавцом —
+встретился — купил.
+Всё просто и без лишних сложностей.
+
+<br><br>
+
+Размещай объявления на
+<span class="shop">PANDOR SHOP</span>,
+находи выгодные предложения и продавай то,
+что больше не нужно.
+</p>
+
+<a href="index.html" class="shop-btn">
+🛍 Перейти к товарам
+</a>
+
+<div class="footer">
+© 2026 PANDOR SHOP
+</div>
+
+</div>
+
+</body>
+</html>
